@@ -1,0 +1,53 @@
+accessControl:
+  enabled: true
+  userFile: /root/.octoprint/users.yaml
+  autologinLocal: true
+  autologinAs: garrett
+  localNetworks:
+  - 127.0.0.0/8
+  - 10.0.0.0/24
+  - 172.17.0.0/12
+  - 10.0.3.0/24
+api:
+  enabled: true
+  key: A39312FE2A6944C09CB13749308E2705
+appearance:
+  color: black
+cura: {}
+feature: {}
+folder:
+  logs: /storage/logs
+  timelapse: /storage/timelapse
+  timelapse_tmp: /storage/timelapse/tmp
+  uploads: /storage/uploads
+gcodeViewer: {}
+printerParameters:
+  bedDimensions:
+    r: 100
+    x: 180
+    y: 140
+  movementSpeed: {}
+serial:
+  autoconnect: true
+  baudrate: 250000
+  port: /dev/ttyACM0
+  timeout: {}
+server:
+  firstRun: false
+system: {}
+temperature:
+  profiles:
+  - bed: '110'
+    extruder: '230'
+    name: ABS 230/110
+  - bed: '110'
+    extruder: '240'
+    name: ABS 240/110
+  - bed: '115'
+    extruder: '160'
+    name: ABS Preheat
+  - bed: '70'
+    extruder: '195'
+    name: PLA 195/70
+webcam: {}
+
